@@ -1,0 +1,637 @@
+@charset "UTF-8";
+/*-----------------------------------------------------
+
+　Grandi Petit
+　PC用CSS
+
+-----------------------------------------------------*/
+/* Purple */
+/* #########################
+
+	共通設定
+
+######################### */
+#pagetop {
+  position: relative; }
+
+a {
+  color: #000; }
+  a:hover {
+    color: #8258a2; }
+
+/* #########################
+
+	ヘッダ
+
+######################### */
+/* ##### Header ##### */
+header {
+  display: table;
+  width: 100%;
+  background: #000 none;
+  position: fixed;
+  z-index: 200; }
+  header div {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 20px; }
+    header div:last-child {
+      text-align: right; }
+    header div h1 {
+      margin: 0px; }
+      header div h1 a:hover img {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        -ms-filter: alpha(opacity=80); }
+    header div ul {
+      list-style: none; }
+      header div ul li {
+        display: inline-block;
+        margin: 0px 10px; }
+        header div ul li a {
+          color: #fff;
+          font-weight: normal;
+          text-decoration: none;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease; }
+          header div ul li a:hover {
+            color: #8258a2;
+            text-decoration: underline; }
+          header div ul li a.active {
+            color: #8258a2;
+            text-decoration: underline; }
+
+/* Toggle Button */
+#nav-toggle {
+  display: none; }
+
+/* ##### Main Image ##### */
+/* #mainimage {
+	width: 100%;
+	height: 100vh;
+	background: url("../img/img_top_mainimage.jpg") fixed;
+	background-size: cover;
+	background-position: center bottom;
+}*/
+#mainimage-pc {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/img_top_mainimage.jpg") fixed;
+  background-size: cover;
+  background-position: center bottom;
+  margin: 0px;
+  /*position: fixed;*/ }
+
+#mainimage-sp {
+  display: none; }
+
+/* #########################
+
+	トップコンテンツ
+
+######################### */
+/* ##### Common ##### */
+#wrapper {
+  background: #fff none;
+  margin: 0px; }
+  #wrapper article {
+    padding: 0px 0px 80px 0px; }
+    #wrapper article .h2wrap {
+      width: 100%;
+      height: 50vh;
+      background-repeat: no-repeat;
+      text-align: center;
+      z-index: 50; }
+    #wrapper article h2 {
+      color: #8258a2;
+      font-family: "HelveticaNeue-UltraLight", "HelveticaNeue", Helvetica, Arial, Verdana;
+      font-size: 30px;
+      font-weight: normal;
+      text-align: center;
+      padding-top: 80px;
+      z-index: 80; }
+      #wrapper article h2:after {
+        display: block;
+        content: "";
+        background: #8258a2;
+        width: 36px;
+        height: 5px;
+        text-align: center;
+        margin: 20px auto; }
+    #wrapper article h3 {
+      font-size: 17px;
+      text-align: center;
+      line-height: 130%;
+      margin: 80px 0px 30px 0px; }
+    #wrapper article p {
+      text-align: center;
+      margin: 20px 10px; }
+
+/* ##### チーム ##### */
+#team-h2 {
+  background-repeat: no-repeat !important;
+  background-size: cover; }
+
+/* ##### メンバー ##### */
+.member-h2 {
+  background-repeat: no-repeat !important;
+  background-size: cover; }
+
+#member-list {
+  width: 100%;
+  max-width: 960px;
+  list-style: none;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /*flex-start,center,space-between*/ }
+  #member-list li {
+    width: 160px;
+    margin-bottom: 15px; }
+    #member-list li a {
+      display: block;
+      font-weight: bold;
+      text-decoration: none;
+      line-height: 130%;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease; }
+      #member-list li a span {
+        font-size: smaller;
+        font-weight: normal; }
+      #member-list li a:hover img {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        -ms-filter: alpha(opacity=80);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease; }
+
+/* ##### お知らせ、レポート、フォト ##### */
+#top-news-article {
+  background: #000;
+  padding: 80px 0px !important; }
+  #top-news-article ul {
+    margin: 50px 20px 0px 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*flex-start,center,space-between*/ }
+    #top-news-article ul li {
+      width: 50%;
+      height: 246px;
+      background-position: center center;
+      background-size: cover;
+      vertical-align: top; }
+      #top-news-article ul li a {
+        display: block;
+        height: 246px;
+        background: rgba(0, 0, 0, 0.5);
+        font-family: "HelveticaNeue-UltraLight", "HelveticaNeue", Helvetica, Arial, Verdana;
+        font-size: 41px;
+        text-decoration: none;
+        position: relative;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease; }
+        #top-news-article ul li a:hover {
+          background: rgba(0, 0, 0, 0.2); }
+          #top-news-article ul li a:hover span {
+            color: #8258a2; }
+        #top-news-article ul li a span {
+          display: inline-block;
+          color: #fff;
+          line-height: 100%;
+          position: absolute; }
+      #top-news-article ul li#btn-top-news {
+        background-image: url("../img/btn_top_news.jpg"); }
+        #top-news-article ul li#btn-top-news span {
+          top: 15px;
+          left: 10px; }
+      #top-news-article ul li#btn-top-schedule {
+        background-image: url("../img/btn_top_schedule.jpg"); }
+        #top-news-article ul li#btn-top-schedule span {
+          text-align: right;
+          top: 15px;
+          right: 10px; }
+      #top-news-article ul li#btn-top-report {
+        background-image: url("../img/btn_top_report.jpg"); }
+        #top-news-article ul li#btn-top-report span {
+          text-align: right;
+          top: 15px;
+          right: 10px; }
+      #top-news-article ul li#btn-top-photo {
+        background-image: url("../img/btn_top_photo.jpg"); }
+        #top-news-article ul li#btn-top-photo span {
+          top: 15px;
+          right: 10px; }
+
+/* ##### スポンサー ##### */
+#top-sponcer-article {
+  padding: 80px 0px !important; }
+  #top-sponcer-article #sponcer-list {
+    list-style: none;
+    text-align: center;
+    margin: 50px auto; }
+    #top-sponcer-article #sponcer-list li {
+      display: inline-block;
+      vertical-align: top;
+      margin: 20px; }
+
+/* ##### SNS ##### */
+#top-sns-article {
+  background: #8258a2 none;
+  padding: 80px 0px !important; }
+  #top-sns-article h2 {
+    color: #fff !important; }
+    #top-sns-article h2:after {
+      background: #fff !important; }
+  #top-sns-article ul {
+    max-width: 960px;
+    list-style: none;
+    margin: 50px auto;
+    text-align: center; }
+    #top-sns-article ul li {
+      display: inline-block;
+      margin: 5px 30px; }
+      #top-sns-article ul li a {
+        display: block;
+        color: #fff;
+        text-align: left;
+        text-decoration: none;
+        line-height: 130%; }
+        #top-sns-article ul li a span {
+          display: inline-block; }
+          #top-sns-article ul li a span img {
+            padding-right: 10px;
+            margin-right: 10px;
+            border-right: 1px solid #fff;
+            vertical-align: text-bottom; }
+        #top-sns-article ul li a:hover {
+          opacity: 0.8;
+          filter: alpha(opacity=80);
+          -ms-filter: alpha(opacity=80); }
+
+/* #########################
+
+	フッター
+
+######################### */
+footer {
+  padding: 0px; }
+  footer p {
+    margin: 80px 0px;
+    text-align: center; }
+    footer p#copyright {
+      background: #8258a2;
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      margin: 0px;
+      padding: 10px; }
+
+#pagetopBtn {
+  width: 55px;
+  height: 55px;
+  margin: 0px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -ms-filter: alpha(opacity=80); }
+  #pagetopBtn img {
+    width: 55px;
+    height: 55px; }
+  #pagetopBtn:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: alpha(opacity=100); }
+
+/* #########################
+
+	セカンダリコンテンツ
+
+######################### */
+#second-wrapper {
+  background: #fff none;
+  margin: 0px; }
+  #second-wrapper article {
+    padding: 0px 0px 80px 0px; }
+    #second-wrapper article h2 {
+      color: #8258a2;
+      font-family: "HelveticaNeue-UltraLight", "HelveticaNeue", Helvetica, Arial, Verdana;
+      font-size: 30px;
+      font-weight: normal;
+      text-align: center;
+      padding-top: 80px;
+      z-index: 80; }
+      #second-wrapper article h2:after {
+        display: block;
+        content: "";
+        background: #8258a2;
+        width: 36px;
+        height: 5px;
+        text-align: center;
+        margin: 20px auto; }
+    #second-wrapper article h3 {
+      font-size: 20px;
+      line-height: 130%;
+      margin: 0px 0px 30px 0px;
+      padding: 5px;
+      border-bottom: 1px solid #8258a2; }
+      #second-wrapper article h3 span {
+        font-size: 14px; }
+    #second-wrapper article h4 {
+      font-size: 18px;
+      line-height: 130%;
+      margin: 20px 0px 10px 0px;
+      padding: 0px 0px 0px 10px;
+      border-left: 9px solid #8258a2; }
+
+/* ##### 記事一覧 ##### */
+#article-list {
+  width: 100%;
+  max-width: 960px;
+  list-style: none;
+  margin: 50px auto;
+  border-top: 1px solid #ccc; }
+  #article-list li {
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #ccc; }
+    #article-list li a {
+      display: block;
+      line-height: 150%;
+      text-decoration: none;
+      padding: 0px 5px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease; }
+      #article-list li a > span {
+        display: table;
+        width: 100%;
+        border-collapse: collapse; }
+        #article-list li a > span > span {
+          display: table-cell;
+          padding: 15px;
+          vertical-align: middle; }
+          #article-list li a > span > span.article-list-date {
+            width: 7em; }
+          #article-list li a > span > span.article-list-title {
+            font-weight: bold; }
+          #article-list li a > span > span.article-list-place {
+            width: 10em; }
+      #article-list li a:hover {
+        background: #ece6f1 none;
+        color: #000; }
+
+/* ##### Back Button ##### */
+#backBtn {
+  text-align: center;
+  margin: 50px auto; }
+  #backBtn a {
+    display: inline-block;
+    background: #8258a2;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; }
+    #backBtn a:hover {
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+      -ms-filter: alpha(opacity=80); }
+
+/* ##### Page Nation ##### */
+.pageNav {
+  font-size: 0;
+  text-align: center;
+  overflow: hidden;
+  margin: 50px auto 20px auto; }
+  .pageNav a {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    text-decoration: none; }
+    .pageNav a:hover {
+      background: #fff;
+      color: #8258a2;
+      border: 1px solid #8258a2; }
+
+.pageNav a,
+.pageNav span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1em;
+  padding: 14px 17px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+.pageNav .current {
+  background: #8258a2;
+  border: 1px solid #8258a2;
+  color: #fff; }
+
+.pageNav .invalid {
+  background: #ccc;
+  border: 1px solid #ccc;
+  color: #fff; }
+
+/* ##### File Upload ##### */
+#filelist {
+  width: 100%;
+  max-width: 960px;
+  list-style: none;
+  margin: 50px auto;
+  border-top: 1px solid #ccc; }
+  #filelist li {
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #ccc; }
+    #filelist li a {
+      display: block;
+      line-height: 150%;
+      text-decoration: none;
+      padding: 15px 15px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease; }
+      #filelist li a img {
+        margin-right: 10px;
+        vertical-align: text-bottom; }
+      #filelist li a:hover {
+        background: #ece6f1 none;
+        color: #000; }
+
+/* ##### Photo Area ##### */
+#photo-thumb {
+  width: 100%;
+  max-width: 960px;
+  list-style: none;
+  margin: 30px auto 0px auto;
+  padding: 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /*flex-start,center,space-between*/ }
+  #photo-thumb li {
+    width: 300px;
+    margin: 10px;
+    vertical-align: top; }
+    #photo-thumb li a {
+      display: block;
+      width: 300px;
+      color: #000;
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 140%;
+      overflow: hidden; }
+      #photo-thumb li a span {
+        display: block;
+        margin: 7px 0px; }
+        #photo-thumb li a span:first-child {
+          text-align: center; }
+        #photo-thumb li a span img {
+          max-width: 300px;
+          max-height: 300px; }
+      #photo-thumb li a:hover {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        -ms-filter: alpha(opacity=80); }
+
+/* #########################
+
+	メンバー
+
+######################### */
+#second-member-h2 {
+  width: 100%;
+  height: 570px;
+  /* 600 */
+  background: transparent url("../member/img/photo_2nd_member.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 30px 0px 0px 0px; }
+
+#member-detail-wrap {
+  display: table;
+  width: 100%;
+  max-width: 960px;
+  margin: 100px auto; }
+  #member-detail-wrap > div {
+    display: table-cell;
+    vertical-align: top; }
+    #member-detail-wrap > div:first-child {
+      width: 320px; }
+
+dl#member-detail dt {
+  color: #8258a2;
+  font-weight: bold; }
+
+dl#member-detail dd {
+  margin-bottom: 10px; }
+
+/* #########################
+
+	ニュース
+
+######################### */
+#second-news-h2 {
+  width: 100%;
+  height: 570px;
+  /* 600 */
+  background: transparent url("../news/img/photo_2nd_news.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 30px 0px 0px 0px; }
+
+#news-article {
+  width: 100%;
+  max-width: 960px;
+  margin: 100px auto; }
+  #news-article #article-date {
+    text-align: right;
+    margin: 0px auto 30px auto; }
+
+/* #########################
+
+	レース系
+
+######################### */
+#race-detail {
+  background: #eee none;
+  padding: 20px 30px; }
+  #race-detail table {
+    border-collapse: collapse; }
+    #race-detail table th {
+      font-weight: normal;
+      padding: 2px 10px; }
+    #race-detail table td {
+      font-weight: bold;
+      padding: 2px 10px; }
+      #race-detail table td span {
+        font-weight: normal;
+        white-space: nowrap; }
+
+#race-member-list {
+  font-weight: bold;
+  margin-bottom: 30px; }
+
+/* ##### スケジュール ##### */
+#second-schedule-h2 {
+  width: 100%;
+  height: 570px;
+  /* 600 */
+  background: transparent url("../schedule/img/photo_2nd_schedule.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 30px 0px 0px 0px; }
+
+#schedule-article {
+  width: 100%;
+  max-width: 960px;
+  margin: 100px auto; }
+
+/* ##### レポート ##### */
+#second-report-h2 {
+  width: 100%;
+  height: 570px;
+  /* 600 */
+  background: transparent url("../report/img/photo_2nd_report.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 30px 0px 0px 0px; }
+
+#report-article {
+  width: 100%;
+  max-width: 960px;
+  margin: 100px auto; }
+
+/* #########################
+
+	フォト
+
+######################### */
+#second-photo-h2 {
+  width: 100%;
+  height: 570px;
+  /* 600 */
+  background: transparent url("../photo/img/photo_2nd_photo.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 30px 0px 0px 0px; }
+
+#photo-article {
+  width: 100%;
+  max-width: 960px;
+  margin: 100px auto; }

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------------
+
+管理画面　プレビュー用
+
+共通CSS
+
+-----------------------------------------------------*/
+
+
+#admin-preview {
+	width: 100%;
+	height: 60px;
+}
+
+#admin-preview div {
+	display: table;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	z-index: 9999;
+}
+
+#admin-preview div p {
+	display: table-cell;
+	width: 100%;
+	height: 60px;
+	margin: 0px auto;
+	background: #000 none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha( opacity=80 )";
+}
+
+
+
+
+
+
+
+/* CSS End */
+ 
