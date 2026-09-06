@@ -719,3 +719,6 @@ dl#member-detail dd {
 
 #photo-article {
   margin: 100px 10px; }
+
+/* Static site fix: center the Team heading image. */
+#team-h2 { background-position: center center !important; }

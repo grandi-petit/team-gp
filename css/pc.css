@@ -204,7 +204,7 @@ header {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     /*flex-start,center,space-between*/ }
     #top-news-article ul li {
       width: 50%;
@@ -661,3 +661,6 @@ dl#member-detail dd {
   width: 100%;
   max-width: 960px;
   margin: 100px auto; }
+
+/* Static site fix: center the Team heading image. */
+#team-h2 { background-position: center center !important; }

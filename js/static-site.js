@@ -44,12 +44,22 @@
       var rect = el.getBoundingClientRect();
       var factor = parseFloat(el.getAttribute('data-paroller-factor')) || 0;
       var offset = (rect.top + rect.height / 2 - window.innerHeight / 2) * factor * -0.12;
-      el.style.backgroundPosition = 'right calc(50% + ' + offset.toFixed(1) + 'px)';
+      el.style.backgroundPosition = 'center calc(50% + ' + offset.toFixed(1) + 'px)';
     });
   };
   window.addEventListener('scroll', updateParallax, { passive: true });
   window.addEventListener('resize', updateParallax);
   updateParallax();
+
+  // Header logo: always return to the site homepage, including GitHub Pages project hosting.
+  var homeLinks = document.querySelectorAll('[data-home-link=\"true\"]');
+  Array.prototype.forEach.call(homeLinks, function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var isGithubPages = /(^|\.)github\.io$/.test(window.location.hostname);
+      window.location.href = isGithubPages ? '/team-gp/' : '/';
+    });
+  });
 
   // Smooth return to the top.
   var topLink = document.querySelector('#pagetopBtn a');
