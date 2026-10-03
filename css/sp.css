@@ -698,7 +698,7 @@ dl#member-detail dd {
 #second-report-h2 {
   width: 100%;
   height: 40vh;
-  background: transparent url("https://grandi-petit.github.io/team-gp/report/img/photo_2nd_report.jpg") center center no-repeat;
+  background: transparent url("../report/img/photo_2nd_report.jpg") center center no-repeat;
   background-size: cover;
   margin-top: 70px; }
 
