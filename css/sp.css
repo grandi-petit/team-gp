@@ -619,7 +619,7 @@ footer p {
 #second-member-h2 {
   width: 100%;
   height: 40vh;
-  background: transparent url("../member/img/photo_2nd_member-sp.jpg") center center no-repeat;
+  background: transparent none center center no-repeat;
   background-size: cover;
   margin-top: 70px; }
 
@@ -647,7 +647,7 @@ dl#member-detail dd {
 #second-news-h2 {
   width: 100%;
   height: 40vh;
-  background: transparent url("../news/img/photo_2nd_news.jpg") center center no-repeat;
+  background: transparent none center center no-repeat;
   background-size: cover;
   margin-top: 70px; }
 
@@ -687,7 +687,7 @@ dl#member-detail dd {
 #second-schedule-h2 {
   width: 100%;
   height: 60vh;
-  background: transparent url("../schedule/img/photo_2nd_schedule.jpg") center center no-repeat;
+  background: transparent none center center no-repeat;
   background-size: cover;
   margin-top: 70px; }
 
@@ -713,9 +713,16 @@ dl#member-detail dd {
 #second-photo-h2 {
   width: 100%;
   height: 60vh;
-  background: transparent url("../photo/img/photo_2nd_photo.jpg") center center no-repeat;
+  background: transparent none center center no-repeat;
   background-size: cover;
   margin-top: 70px; }
 
 #photo-article {
   margin: 100px 10px; }
+
+
+/* TOP alignment guard: preserve centered Team and Race Report artwork. */
+#team-h2 { background-position: center center !important; }
+#top-news-article ul { justify-content: center !important; }
+#top-news-article ul li#btn-top-report { background-position: center center !important; margin-left: auto; margin-right: auto; }
+#top-sponcer-article #sponcer-list { text-align: center !important; }
